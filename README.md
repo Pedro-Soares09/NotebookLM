@@ -1,52 +1,62 @@
-Projeto de Curadoria e Engenharia de Prompts aplicado à Ciência de Dados via NotebookLM.
 
-Contexto e Objetivos
-Este projeto é o resultado de uma imersão teórica e prática em Análise de Dados. O objetivo central foi utilizar o NotebookLM como uma ferramenta de síntese inteligente para explorar o ciclo de vida dos dados — desde a ingestão e limpeza até a visualização estratégica. Busquei consolidar conceitos de estatística descritiva e manipulação de bases de dados, focando na transformação de dados brutos em insights acionáveis.
 
-Curadoria de Fontes
-Para garantir a precisão das análises e o suporte teórico, selecionei e processei as seguintes fontes abertas:
+> **Projeto de Lab de Dados IA.**
 
-Documentação Técnica do Pandas: Guia oficial para manipulação de DataFrames e séries temporais.
+Este repositório documenta a imersão teórica e prática em Análise de Dados, utilizando o **NotebookLM** como motor de síntese inteligente para o ciclo de vida dos dados.
 
-Fundamentos de Estatística Descritiva (Artigo Acadêmico): Base teórica para cálculos de média, mediana, desvio padrão e variância.
+---
 
-Guia de Visualização de Dados (Storytelling with Data): Melhores práticas para a escolha de gráficos e comunicação visual de resultados.
+##  Acesso ao Projeto
+Clique no botão abaixo para visualizar o caderno interativo com todos os insights e fontes processadas:
 
-Dataset Exemplo (Kaggle/Open Source): Base de dados em CSV utilizada para testar os prompts de limpeza e extração de padrões.
+[![NotebookLM](https://img.shields.io/badge/Acessar-NotebookLM-blue?style=for-the-badge&logo=google&logoColor=white)](https://notebooklm.google.com/notebook/f5f8461e-e230-41fe-bdd3-c7111f038576)
 
-Engenharia de Prompts e "Cicatrizes"
-Nesta seção, documento o raciocínio por trás da interação com a IA, demonstrando que o resultado é fruto de um refinamento técnico (Troubleshooting).
+---
 
-Variações de Prompts Testadas
-Prompt de Extração: "Atue como um Cientista de Dados Sênior. Analise o documento de estatística e resuma como identificar a distribuição normal em um conjunto de dados."
+## Contexto e Objetivos
+O objetivo central foi explorar o pipeline de dados — da ingestão e limpeza à visualização estratégica. Através deste material, busquei consolidar conceitos de **estatística descritiva** e **manipulação de bases de dados**, transformando dados brutos em insights acionáveis para tomada de decisão.
 
-Prompt de Refinamento: "O resumo anterior foi muito teórico. Reformule focando em exemplos práticos de código Python usando a biblioteca Seaborn."
+##  Curadoria de Fontes
+Para garantir rigor técnico, o NotebookLM foi alimentado com as seguintes fontes:
 
-"Cicatrizes" (Troubleshooting)
-Durante o processo, identifiquei que a IA tendia a generalizar o tratamento de valores nulos (NaN). Documentei que, para dados financeiros, o comando simples dropna() poderia causar perda de dados críticos. Ajustei a estratégia solicitando prompts que considerassem a imputação de dados (preenchimento baseado na média ou mediana), garantindo a integridade da amostra final.
+*  **Documentação Técnica do Pandas:** O padrão ouro para manipulação de DataFrames.
+*  **Fundamentos de Estatística Descritiva:** Base teórica para cálculos de tendência central e dispersão.
+* **Guia Storytelling with Data:** Princípios de design e comunicação visual de resultados.
+* **Dataset Exemplo (Kaggle):** Base prática para testes de limpeza e identificação de padrões.
 
-Miniguia de Estudo (Entrega Final)
-Resumos Estruturados
-O material consolidado abrange o pipeline fundamental:
+---
 
-Exploração: Identificação de tipos de variáveis (qualitativas vs. quantitativas).
+##  Engenharia de Prompts e "Cicatrizes"
+Documentação do raciocínio crítico aplicado na interação com a IA (*Troubleshooting*).
 
-Tratamento: Limpeza de ruídos e normalização de escalas.
+###  Variações de Prompts
+* **Prompt de Extração:** *"Atue como um Cientista de Dados Sênior. Analise o documento de estatística e resuma como identificar a distribuição normal em um conjunto de dados."*
+* **Prompt de Refinamento:** *"O resumo anterior foi muito teórico. Reformule focando em exemplos práticos de código Python usando a biblioteca Seaborn."*
 
-Análise: Aplicação de correlações e testes de hipóteses.
+###  "Cicatrizes" (O que aprendi com os erros)
+Identifiquei que a IA tendia a generalizar o tratamento de valores nulos (`NaN`). Em contextos financeiros, o uso direto de `dropna()` causaria perda de dados críticos. Ajustei a estratégia para **Imputação de Dados** (média/mediana), garantindo a integridade da amostra final.
 
-Glossário de Conceitos Aprendidos
-EDA (Exploratory Data Analysis): Investigação inicial para descobrir padrões e anomalias.
+---
 
-Outliers: Valores que fogem drasticamente do padrão e exigem tratamento especial.
+##  Miniguia de Estudo 
 
-Correlation vs. Causation: A distinção crítica de que dois eventos relacionados não necessariamente causam um ao outro.
+### Resumos Estruturados
+1.  **Exploração:** Identificação de variáveis qualitativas vs. quantitativas.
+2.  **Tratamento:** Limpeza de ruídos e normalização de escalas.
+3.  **Análise:** Aplicação de correlações e testes de hipóteses.
 
-Prompts Reutilizáveis para Revisão
-"Crie um checklist de 5 passos para validar a qualidade de um novo dataset de vendas."
+###  Glossário de Conceitos
+* **EDA (Exploratory Data Analysis):** Investigação inicial para descobrir padrões.
+* **Outliers:** Valores atípicos que exigem tratamento ou descarte estratégico.
+* **Correlation vs. Causation:** O entendimento de que correlação não implica causalidade.
 
-"Explique de forma simplificada a diferença entre Desvio Padrão e Variância, usando uma analogia com esportes."
+###  Prompts Reutilizáveis para Revisão
+> *Dica: Copie e cole os comandos abaixo no seu chat de IA para estudar.*
 
-"Gere um esqueleto de código Python para plotar um gráfico de dispersão com linha de regressão."
+* `"Crie um checklist de 5 passos para validar a qualidade de um novo dataset de vendas."`
+* `"Explique a diferença entre Desvio Padrão e Variância usando uma analogia com esportes."`
+* `"Gere um esqueleto de código Python para plotar um gráfico de dispersão com linha de regressão."`
 
-Dica de uso: Para manter este repositório atualizado, pretendo adicionar novos estudos de caso sempre que encontrar um dataset desafiador.
+
+
+> **Dica de uso:** Este repositório é vivo. Pretendo adicionar novos estudos de caso e datasets desafiadores conforme o progresso nos meus estudos.
